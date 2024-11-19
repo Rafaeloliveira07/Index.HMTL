@@ -9,11 +9,19 @@
     <form action="Cadastro" method="post" autocomplete="off">
         <p>
             <label for="Nome">Nome</label>
-            <input type="text" name="Nome" id="Nome" placeholder="Nome" required>
+            <input type="text" name="Nome" id="Nome" placeholder="Nome" required maxlength="8">
         </p>
         <p>
-            <label for="senha">senha</label>
-            <input type="password" name="senha" id="senha" placeholder="senha" required>
+            <label for="isenha">senha</label>
+            <input type="password" name="isenha" id="senha" placeholder="senha" required maxlength="8" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        <p>
+            <label for="Médiaa">Média</label>
+            <input type="number" name="Média" id="Médiaa" min="0" max="10" placeholder="0 a 10" step="0.1" required>
         </p>
     </form>
 </body>
